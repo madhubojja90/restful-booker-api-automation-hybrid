@@ -1,9 +1,11 @@
 package com.madhu.api.endpoint;
 
+import com.madhu.api.utils.ConfigReader;
+
 public class APIConstants {
 
     // Base URL for the RESTful Booker API
-    public static final String BASE_URL = "https://restful-booker.herokuapp.com";
+    public static final String BASE_URL = ConfigReader.getProperty("baseUrl");
 
     // Auth Endpoint
     public static final String CREATE_TOKEN = "/auth";

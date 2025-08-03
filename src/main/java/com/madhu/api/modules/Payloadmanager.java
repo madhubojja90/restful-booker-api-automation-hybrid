@@ -3,6 +3,7 @@ package com.madhu.api.modules;
 
 import com.google.gson.Gson;
 import com.madhu.api.pojos.*;
+import com.madhu.api.utils.ConfigReader;
 
 
 public class Payloadmanager {
@@ -65,8 +66,8 @@ public class Payloadmanager {
     public String setAuthToken()
     {
         Auth auth=new Auth();
-        auth.setUsername("admin");
-        auth.setPassword("password123");
+        auth.setUsername(ConfigReader.getProperty("username"));
+        auth.setPassword(ConfigReader.getProperty("password"));
         return gson.toJson(auth);
     }
 
