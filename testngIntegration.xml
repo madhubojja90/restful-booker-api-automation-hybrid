@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/RestAssuredProject1/restful-booker-api-automation-hybrid">
+        <classes>
+            <class name="com.madhu.api.tests.integration.BookingIntegrationTest">
+                <methods>
+                    <include name="shouldCreateBookingSuccessfully"/>
+                    <include name="shouldRetrieveBookingById"/>
+                    <include name="shouldUpdateBookingDetailsById"/>
+                    <include name="shouldDeleteBookingSuccessfullyById"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
